@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hind Siliguri", sans-serif;
+}
+
+#beforeStart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: rgb(211, 124, 211);
+  font-size: 200px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  margin: 50px 570px 0 570px;
+}
+
+header > div {
+  text-align: center;
+}
+
+#hiscore,
+#time {
+  font-size: 40px;
+}
+
+#score {
+  font-size: 80px;
+  color: rgb(117, 206, 117);
+  line-height: 1;
+}
+
+#time {
+  color: red;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+table tr td {
+  border: 1px solid #bbb;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 100px;
+  font-size: 25px;
+  color: rgb(124, 121, 121);
+  display: inline-block;
+}
+
+#scoreBar {
+  position: relative;
+  width: 300px;
+  height: 10px;
+  margin: 50px auto;
+  background-color: rgb(117, 192, 235);
+  border: 1px solid blue;
+}
+
+#scoreBar #progress {
+  background: blue;
+  position: absolute;
+  width: 0;
+  height: 100%;
+  right: -1px;
+  top: 0;
+}
+
+#userMessage,
+#gameOverMessage {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: rgb(183, 216, 35);
+  pointer-events: none;
+}
+
+#gameOverMessage {
+  color: red;
+  font-size: 90px;
+  text-shadow: 20px 20px 10px rgba(0, 0, 0, 0.3);
+  width: 450px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1;
+}
+
+#gameRestart {
+  font-size: 30px;
+  transition: 0.5s all ease;
+  transform: scale(1);
+  display: inline-block;
+}
+
+#gameRestartBtn {
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.animate {
+  transform: scale(1.1) !important;
+}
